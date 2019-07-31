@@ -4,11 +4,13 @@
 #
 Name     : mvn-jackson-module-jaxb-annotations
 Version  : 2.6.7
-Release  : 1
+Release  : 2
 URL      : https://github.com/FasterXML/jackson-module-jaxb-annotations/archive/jackson-module-jaxb-annotations-2.6.7.tar.gz
 Source0  : https://github.com/FasterXML/jackson-module-jaxb-annotations/archive/jackson-module-jaxb-annotations-2.6.7.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7/jackson-module-jaxb-annotations-2.6.7.jar
 Source2  : https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7/jackson-module-jaxb-annotations-2.6.7.pom
+Source3  : https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.jar
+Source4  : https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -38,6 +40,12 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/m
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7/jackson-module-jaxb-annotations-2.6.7.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -46,3 +54,5 @@ cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/com/fasterxml/jackson/m
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7/jackson-module-jaxb-annotations-2.6.7.jar
 /usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7/jackson-module-jaxb-annotations-2.6.7.pom
+/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.jar
+/usr/share/java/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.9.5/jackson-module-jaxb-annotations-2.9.5.pom
