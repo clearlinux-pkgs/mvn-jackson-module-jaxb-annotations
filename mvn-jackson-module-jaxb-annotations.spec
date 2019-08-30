@@ -4,7 +4,7 @@
 #
 Name     : mvn-jackson-module-jaxb-annotations
 Version  : 2.6.7
-Release  : 3
+Release  : 4
 URL      : https://github.com/FasterXML/jackson-module-jaxb-annotations/archive/jackson-module-jaxb-annotations-2.6.7.tar.gz
 Source0  : https://github.com/FasterXML/jackson-module-jaxb-annotations/archive/jackson-module-jaxb-annotations-2.6.7.tar.gz
 Source1  : https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.6.7/jackson-module-jaxb-annotations-2.6.7.jar
